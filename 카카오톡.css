@@ -1,0 +1,116 @@
+:root {
+    --font-size: 20px
+}
+#log>div.deleted {
+    visibility: hidden
+}
+#log .emote_wrap {
+    position: relative;
+    padding: 1px
+}
+#log .emote_wrap img.emoticon {
+    height: calc(var(--font-size) * 1.5);
+    vertical-align: middle;
+    margin: -5px 0 0
+}
+.badge {
+    margin: -5px 0 -2px
+}
+#log .meta {
+    padding-right: 6px;
+    position: relative
+}
+.badge {
+    margin-right: 4px;
+    height: 1em
+}
+.name {
+    font-weight: 700;
+    margin-left: 0
+}
+.colon,.name {
+    height: 24px
+}
+
+body,html {
+    width:100%;
+    height: 100%;
+    overflow:hidden;
+}
+#log {
+    display:flex;
+    flex-direction:column;
+    position: absolute;
+    justify-content:center;
+    align-items:flex-start;
+    bottom: 0;
+    left: 0;
+    padding: 0 10px 10px;
+    width: 100%;
+    gap:20px;
+    box-sizing: border-box;
+    text-shadow: -1px -1px 0 rgba(0,0,0,.7),-1px 1px 0 rgba(0,0,0,.7),1px -1px 0 rgba(0,0,0,.7),1px 1px 0 rgba(0,0,0,.7),0 0 1px rgba(0,0,0,.7),0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000
+}
+body {
+    -webkit-mask-image: -webkit-gradient(linear,left 5%,left top,from(#000),to(transparent))
+}
+#log>div {
+    font-weight:600;
+    padding-bottom: .25em;
+    word-wrap: break-word;
+    position:relative;
+    z-index:0;
+    width:max-content;
+    max-width:50%;
+    padding:10px 20px;
+}
+#log>div:nth-child(odd){
+    box-shadow: -1px -1px 1px 1px black;
+    border-radius:10px 10px 10px 0px;
+    background-color:white;
+}
+#log>div:nth-child(even){
+    align-self:flex-end;
+    box-shadow: 1px -1px 1px 1px black;
+    border-radius:10px 10px 0px 10px;
+    background-color:#fee500;
+}
+#log>div:nth-child(odd):before{
+    content:'';
+    z-index:10;
+    border-top:15px solid white;
+    border-right:15px solid transparent;
+    position:absolute;
+    bottom:-15px;
+    left:0;
+    box-shadow: -2px 0px black;
+}
+#log>div:nth-child(even):before{
+    content:'';
+    z-index:10;
+    border-top:15px solid #fee500;
+    border-left:15px solid transparent;
+    position:absolute;
+    bottom:-15px;
+    right:0;
+    box-shadow:2px 0px black;
+}
+#log.small>div {
+    line-height: 1.5em;
+}
+
+body {
+    background: transparent;
+    color: #fff;
+    font-size: var(--font-size)
+}
+span.message>img {
+    height: 1em
+}
+span.message>img.emote {
+    height: auto!important;
+    vertical-align: text-top
+}
+span.name,span.colon{
+    color:white;
+}
