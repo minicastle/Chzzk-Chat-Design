@@ -1,14 +1,14 @@
 :root {
     --font-size: 20px
 }
-#log>div.deleted {
+#chat_wrapper>div.deleted {
     visibility: hidden
 }
-#log .emote_wrap {
+#chat_wrapper .emote_wrap {
     position: relative;
     padding: 1px
 }
-#log .emote_wrap img.emoticon {
+#chat_wrapper .emote_wrap img.emoticon {
     height: calc(var(--font-size) * 1.5);
     vertical-align: middle;
     margin: -5px 0 0
@@ -16,7 +16,7 @@
 .badge {
     margin: -5px 0 -2px
 }
-#log .meta {
+#chat_wrapper .meta {
     padding-right: 6px;
     position: relative
 }
@@ -26,18 +26,13 @@
 }
 .name {
     font-weight: 700;
-    margin-left: 0
 }
-.colon,.name {
-    height: 24px
-}
-
 body,html {
     width:100%;
     height: 100%;
     overflow:hidden;
 }
-#log {
+#chat_wrapper {
     display:flex;
     flex-direction:column;
     position: absolute;
@@ -54,7 +49,7 @@ body,html {
 body {
     -webkit-mask-image: -webkit-gradient(linear,left 5%,left top,from(#000),to(transparent))
 }
-#log>div {
+#chat_wrapper>div {
     font-weight:600;
     padding-bottom: .25em;
     word-wrap: break-word;
@@ -63,19 +58,21 @@ body {
     width:max-content;
     max-width:50%;
     padding:10px 20px;
+    display:flex;
+    flex-direction:column;
 }
-#log>div:nth-child(odd){
+#chat_wrapper>div:nth-child(odd){
     box-shadow: -1px -1px 1px 1px black;
     border-radius:10px 10px 10px 0px;
     background-color:white;
 }
-#log>div:nth-child(even){
+#chat_wrapper>div:nth-child(even){
     align-self:flex-end;
     box-shadow: 1px -1px 1px 1px black;
     border-radius:10px 10px 0px 10px;
     background-color:#fee500;
 }
-#log>div:nth-child(odd):before{
+#chat_wrapper>div:nth-child(odd):before{
     content:'';
     z-index:10;
     border-top:15px solid white;
@@ -85,7 +82,7 @@ body {
     left:0;
     box-shadow: -2px 0px black;
 }
-#log>div:nth-child(even):before{
+#chat_wrapper>div:nth-child(even):before{
     content:'';
     z-index:10;
     border-top:15px solid #fee500;
@@ -95,7 +92,7 @@ body {
     right:0;
     box-shadow:2px 0px black;
 }
-#log.small>div {
+#chat_wrapper.small>div {
     line-height: 1.5em;
 }
 
@@ -111,6 +108,6 @@ span.message>img.emote {
     height: auto!important;
     vertical-align: text-top
 }
-span.name,span.colon{
-    color:white;
+.name {
+    color:white !important;
 }

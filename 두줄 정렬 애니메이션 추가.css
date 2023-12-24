@@ -1,0 +1,119 @@
+:root {
+  --font-size: 20px;
+}
+#chat_wrapper > div.deleted {
+  visibility: hidden;
+}
+#chat_wrapper .emote_wrap {
+  position: relative;
+  padding: 1px;
+}
+#chat_wrapper .emote_wrap img.emoticon {
+  height: calc(var(--font-size) * 1.5);
+  vertical-align: middle;
+  margin: -5px 0 0;
+}
+.badge {
+  margin: -5px 0 -2px;
+}
+#chat_wrapper .meta {
+  padding-right: 6px;
+  position: relative;
+}
+.badge {
+  margin-right: 4px;
+  height: 1em;
+}
+.name {
+  font-weight: 700;
+  margin-left: 0;
+}
+body,
+html {
+  height: 100%;
+  overflow: hidden;
+}
+#chat_wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 10px 10px;
+  width: 100%;
+  box-sizing: border-box;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7),
+    1px -1px 0 rgba(0, 0, 0, 0.7), 1px 1px 0 rgba(0, 0, 0, 0.7),
+    0 0 1px rgba(0, 0, 0, 0.7), 0 0 3px #000, 0 0 3px #000, 0 0 3px #000,
+    0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000,
+    0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000,
+    0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000,
+    0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000,
+    0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000,
+    0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000,
+    0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000,
+    0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000,
+    0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000,
+    0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000,
+    0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000,
+    0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000,
+    0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000,
+    0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000,
+    0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000,
+    0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000,
+    0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000,
+    0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000,
+    0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000,
+    0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000,
+    0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000,
+    0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000,
+    0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000,
+    0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000,
+    0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000,
+    0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000,
+    0 0 3px #000, 0 0 3px #000;
+}
+#chat_wrapper > div {
+  padding-bottom: 0.25em;
+  word-wrap: break-word;
+}
+#chat_wrapper.small > div {
+  line-height: 1.5em;
+}
+body {
+  background: transparent;
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    left 5%,
+    left top,
+    from(#000),
+    to(transparent)
+  );
+  color: #fff;
+  font-size: var(--font-size);
+}
+#chat_wrapper > div {
+  font-weight: 600;
+}
+span.message > img {
+  height: 1em;
+}
+span.message > img.emote {
+  height: auto !important;
+  vertical-align: text-top;
+}
+
+#chat_wrapper > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+span.colon {
+  display: none;
+}
+span.meta {
+  padding: 5px 0;
+}
+.colon,
+.name {
+  height: 24px;
+}
