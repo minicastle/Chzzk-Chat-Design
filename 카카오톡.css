@@ -1,14 +1,17 @@
 :root {
     --font-size: 20px
 }
-#chat_wrapper>div.deleted {
+.colon{
+    display:none;
+}
+#log>div.deleted {
     visibility: hidden
 }
-#chat_wrapper .emote_wrap {
+#log .emote_wrap {
     position: relative;
     padding: 1px
 }
-#chat_wrapper .emote_wrap img.emoticon {
+#log .emote_wrap img.emoticon {
     height: calc(var(--font-size) * 1.5);
     vertical-align: middle;
     margin: -5px 0 0
@@ -16,7 +19,7 @@
 .badge {
     margin: -5px 0 -2px
 }
-#chat_wrapper .meta {
+#log .meta {
     padding-right: 6px;
     position: relative
 }
@@ -32,7 +35,7 @@ body,html {
     height: 100%;
     overflow:hidden;
 }
-#chat_wrapper {
+#log {
     display:flex;
     flex-direction:column;
     position: absolute;
@@ -49,7 +52,7 @@ body,html {
 body {
     -webkit-mask-image: -webkit-gradient(linear,left 5%,left top,from(#000),to(transparent))
 }
-#chat_wrapper>div {
+#log>div {
     font-weight:600;
     padding-bottom: .25em;
     word-wrap: break-word;
@@ -60,19 +63,20 @@ body {
     padding:10px 20px;
     display:flex;
     flex-direction:column;
+    margin-bottom:5px;
 }
-#chat_wrapper>div:nth-child(odd){
+#log>div:nth-child(odd){
     box-shadow: -1px -1px 1px 1px black;
     border-radius:10px 10px 10px 0px;
     background-color:white;
 }
-#chat_wrapper>div:nth-child(even){
+#log>div:nth-child(even){
     align-self:flex-end;
     box-shadow: 1px -1px 1px 1px black;
     border-radius:10px 10px 0px 10px;
     background-color:#fee500;
 }
-#chat_wrapper>div:nth-child(odd):before{
+#log>div:nth-child(odd):before{
     content:'';
     z-index:10;
     border-top:15px solid white;
@@ -82,7 +86,7 @@ body {
     left:0;
     box-shadow: -2px 0px black;
 }
-#chat_wrapper>div:nth-child(even):before{
+#log>div:nth-child(even):before{
     content:'';
     z-index:10;
     border-top:15px solid #fee500;
@@ -92,7 +96,7 @@ body {
     right:0;
     box-shadow:2px 0px black;
 }
-#chat_wrapper.small>div {
+#log.small>div {
     line-height: 1.5em;
 }
 
@@ -107,7 +111,4 @@ span.message>img {
 span.message>img.emote {
     height: auto!important;
     vertical-align: text-top
-}
-.name {
-    color:white !important;
 }

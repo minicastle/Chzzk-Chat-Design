@@ -1,14 +1,14 @@
 :root {
   --font-size: 20px;
 }
-#chat_wrapper > div.deleted {
+#log > div.deleted {
   visibility: hidden;
 }
-#chat_wrapper .emote_wrap {
+#log .emote_wrap {
   position: relative;
   padding: 1px;
 }
-#chat_wrapper .emote_wrap img.emoticon {
+#log .emote_wrap img.emoticon {
   height: calc(var(--font-size) * 1.5);
   vertical-align: middle;
   margin: -5px 0 0;
@@ -16,7 +16,7 @@
 .badge {
   margin: -5px 0 -2px;
 }
-#chat_wrapper .meta {
+#log .meta {
   padding-right: 6px;
   position: relative;
 }
@@ -33,7 +33,7 @@ html {
   height: 100%;
   overflow: hidden;
 }
-#chat_wrapper {
+#log {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -71,11 +71,11 @@ html {
     0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000,
     0 0 3px #000, 0 0 3px #000;
 }
-#chat_wrapper > div {
+#log > div {
   padding-bottom: 0.25em;
   word-wrap: break-word;
 }
-#chat_wrapper.small > div {
+#log.small > div {
   line-height: 1.5em;
 }
 body {
@@ -90,7 +90,7 @@ body {
   color: #fff;
   font-size: var(--font-size);
 }
-#chat_wrapper > div {
+#log > div {
   font-weight: 600;
 }
 span.message > img {
@@ -101,7 +101,7 @@ span.message > img.emote {
   vertical-align: text-top;
 }
 
-#chat_wrapper > div {
+#log > div {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
